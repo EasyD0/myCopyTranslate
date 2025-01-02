@@ -17,12 +17,17 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        setkey.h
+        setkey.cpp
+        setkey.ui
+		user_settings.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(TextTranslate
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        setkey.h setkey.cpp setkey.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TextTranslate APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

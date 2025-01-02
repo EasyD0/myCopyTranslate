@@ -24,6 +24,7 @@ public:
 public slots:
   void checkClipboard();
   void replyFinished(QNetworkReply*);
+  void showsetkey();
 
 private:
   Ui::MainWindow *ui;
